@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#99F8F4F0"
+    tools:context=".gaurd">
+
+
+    <Button
+        android:text="Visitor Entry"
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#D50000"
+
+        android:background="@drawable/custom_button"
+
+
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/button"
+
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/custom_button"
+        android:text="Permanent Visitor"
+        android:textColor="#D50000"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.Holo.Button"
+
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/button2"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:text="Emergency"
+        android:textColor="#D50000"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button4"
+
+        style="@android:style/Widget.Holo.Button"
+        android:layout_height="70dp"
+        android:layout_below="@id/button3"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/custom_button"
+        android:text="Visitor List"
+        android:onClick="List"
+        android:textSize="36sp"
+        android:textColor="#D50000"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>

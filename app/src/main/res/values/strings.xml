@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">D1</string>
+    
+    <string-array name="reasone">
+        <item>Meet family</item>
+        <item>Freind</item>
+        <item>Courior Boy</item>
+        <item>Delivery produc</item>
+        <item>Maid</item>
+        <item>Milkman</item>
+        <item>News paper distributor</item>
+        <item>Other</item>
+    </string-array>
+</resources>

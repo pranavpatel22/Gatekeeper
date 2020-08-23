@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99F8F4F0"
+    android:clickable="false"
+    tools:context=".ventry">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/editText"
+        android:ems="10"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="142dp"
+        android:layout_height="133dp"
+        android:layout_marginLeft="270sp"
+        android:layout_marginTop="10sp"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290sp"
+        android:layout_marginTop="05sp"
+        android:layout_below="@id/image"
+        android:background="@drawable/custom_button"
+        android:textColor="#D50000"
+        android:text="Capture"
+        android:textSize="20dp"
+        android:onClick="capture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/editText2"
+        android:ems="10"
+        android:hint="Enter Vehical Number"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/editText6">
+        <RadioButton
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/r1"
+            android:text="Male"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:id="@+id/r2"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/radio"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Owner Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Reason"
+        android:inputType="textPersonName"
+        android:textSize="30dp"
+        android:textStyle="bold"
+       android:layout_below="@id/editText7" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/spin"
+        android:ems="10"
+        android:hint="Enter Block,Flat No."
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/editText4"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Member"
+        android:inputType="phone"
+        android:textSize="20dp"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/sbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/editText5"
+        android:background="@drawable/custom_button"
+        android:onClick="save"
+        android:text="Add Visitor"
+        android:textSize="20dp"
+        android:textColor="#D50000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/pbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/editText5"
+        android:textColor="#D50000"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_button"
+        android:onClick="psave"
+        android:text="permanent Visitor"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        tools:ignore="OnClick" />
+
+
+
+</RelativeLayout>
